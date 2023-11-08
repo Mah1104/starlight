@@ -6,15 +6,27 @@
     <title>Starlight</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="Script.js"></script>
-    
 
-    <header class="cabecalho">
+<body>
+   
+      
+      <header class="cabecalho">
         <nav class="cabecalho__menu"> 
             <a class="cabecalho__menu__link" href="index.html">Starlight</a>
         </nav>
+        <div>
+            <audio id="myAudio" autoplay preload="auto">
+                <source src="audio.mp3" type="audio/mpeg">
+               </audio>
+               
+               <script>
+                var audio = document.getElementById("myAudio");
+                audio.volume = 0.3;
+               </script>
+        </div>
     </header>
+
+    
     <main class="apresentacao">
         <div class="apresentacao__completa">
             <section class="apresentacao__conteudo">
@@ -24,7 +36,7 @@
                     <a class="apresentacao__links__botoes" href="Buracos Brancos.html">Buracos Brancos</a>
                 </div>
             </section>
-            <img src="BB_principal.png" alt="Buraco Branco">
+            <img class="apresentacao__imagem" src="BB_principal.png" alt="https://th-thumbnailer.cdn-si-edu.com/aGr9gOggiiBZ4SBT2Fog0bO7D3A=/1000x750/filters:no_upscale():focal(2362x1597:2363x1598)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/18/f4/18f4e941-b85b-45ae-b07c-52eaa6ca1f84/gettyimages-1237093074.jpg">
         </div>
         <div class="apresentacao__completa">
             <section class="apresentacao__conteudo">
@@ -34,7 +46,7 @@
                     <a class="apresentacao__links__botoes" href="Quasares.html">Quasares</a>
                 </div>
             </section>
-            <img src="Quasares_pincipal.png" alt="Quasar">
+            <img class="apresentacao__imagem" src="Quasares_pincipal.png" alt="https://images.wallpapersden.com/image/wxl-astronaut-way-to-black-hole_87136.jpg">
         </div>
         <div class="apresentacao__completa">
             <section class="apresentacao__conteudo">
@@ -44,9 +56,11 @@
                     <a class="apresentacao__links__botoes" href="Paradoxo de Fermi.html">O Paradoxo de Fermi</a>
                 </div>
             </section>
-            <img src="Paradoxo_principal.png" alt="Quasar">
+            <img class="apresentacao__imagem"  src="Paradoxo_principal.png" alt="https://i.pinimg.com/originals/f5/da/cc/f5daccd9e8f06585c98708811d5ec00d.gif">
         </div>
     </main>
+
+
     <footer class="rodape">
         <h1 class="rodape__h1"> <strong class="destaque__rodape__h1">Desenvolvido por:</strong> Maria Luisa Campos Falcão</h1>
         <h2 class="rodape__h2">Direitos autorais:</h2>
